@@ -1,0 +1,32 @@
+.hero{
+
+
+    &__content {
+        &__branding {
+            max-width: 1440px;
+            max-height: 500px;
+            width: 100%;
+            padding-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            @media (max-width:768px) {
+            }
+        }
+
+        &__main {
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            color: #000;
+            @media (max-width:768px) {
+                padding-left: 0;
+                img {
+                    width: 375px;
+                }
+            }
+        }
+    }
+}

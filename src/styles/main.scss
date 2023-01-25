@@ -1,0 +1,19 @@
+@use 'header';
+@use 'hero';
+@use 'news';
+@use 'down';
+@use 'footer';
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    background-color: variables.$corBranco;
+    text-decoration: none;
+}
+
+
+

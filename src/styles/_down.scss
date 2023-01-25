@@ -1,0 +1,40 @@
+.down {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../images/baixo.PNG');
+    height: 300px;
+
+    P {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    div{
+        padding-top: 60px;
+
+        @media (max-width: 702px){
+            padding-top: 0;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: none;
+        
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        &__item {
+            background: none;
+            padding-top: 50px;
+            padding-left: 2px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+}

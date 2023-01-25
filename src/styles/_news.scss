@@ -1,0 +1,55 @@
+@use 'variables';
+
+.news {
+    padding: 5.6vw;
+    background-image: url(/dist/images/padding.PNG);
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    a {
+        
+        background: none;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: variables.$corBlue;
+        background: none;
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        background: none;
+        
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            text-align: center;
+            background: none;
+            text-decoration: none;
+
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 24px;
+                color: variables.$corBranco;
+                background: none;
+            }
+
+            li {
+                list-style-type: none;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+}
